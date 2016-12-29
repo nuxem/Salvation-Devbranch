@@ -233,16 +233,6 @@ if ( isNil "opfor_fuel_container") then { opfor_fuel_container = "Land_Pod_Heli_
 if ( isNil "opfor_ammo_container") then { opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F"; };
 if ( isNil "opfor_flag") then { opfor_flag = "Flag_CSAT_F"; };
 
-// Militia Squad Composition using Syndikat
-// 1 Medic (AKS)
-// 2 AT (AKS/RPG7)
-// 3 A.Rifleman (LIM-85)
-// 4 Rifleman (AKM)
-// 5 Rifleman 2 (AKM)
-// 6 Grenadier (AK12-GL)
-// 7 Light Rifleman (AKS)
-// 8 Explosives Specialist (AKS)
-
 militia_squad = [
 	"I_C_Soldier_Bandit_1_F",
 	"I_C_Soldier_Bandit_2_F",
@@ -499,18 +489,14 @@ elite_vehicles = [ elite_vehicles , { [ _x ] call F_checkClass } ]  call BIS_fnc
 
 //Resistance Composition: Teamleader, Rifleman, Rifleman, Medic, LAT, LAT, Squadleader, Marksman, Marksman, Explosives, Light Rifleman, Light Rifleman
 original_resistance = [
-	"I_C_Soldier_Bandit_6_F",
-	"I_C_Soldier_Bandit_4_F",
-	"I_C_Soldier_Bandit_4_F",
 	"I_C_Soldier_Bandit_1_F",
 	"I_C_Soldier_Bandit_2_F",
-	"I_C_Soldier_Bandit_2_F",
+	"I_C_Soldier_Bandit_3_F",
+	"I_C_Soldier_Bandit_4_F",
+	"I_C_Soldier_Bandit_5_F",
 	"I_C_Soldier_Bandit_6_F",
-	"I_C_Soldier_Bandit_5_F",
-	"I_C_Soldier_Bandit_5_F",
-	"I_C_Soldier_Bandit_8_F",
 	"I_C_Soldier_Bandit_7_F",
-	"I_C_Soldier_Bandit_7_F"
+	"I_C_Soldier_Bandit_8_F"
 ];
 opfor_infantry = [opfor_sentry,opfor_rifleman,opfor_grenadier,opfor_squad_leader,opfor_team_leader,opfor_marksman,opfor_machinegunner,opfor_medic,opfor_rpg,opfor_at,opfor_aa,opfor_officer,opfor_sharpshooter,opfor_sniper,opfor_engineer];
 FCLIB_intel_table = "Land_CampingTable_small_F";
@@ -527,13 +513,6 @@ FCLIB_ignore_colisions_when_building = [
 	"Sign_Sphere100cm_F",
 	"TMR_Autorest_Georef",
 	"Land_ClutterCutter_large_F",
-	"Land_HBarrier_5_F",
-	"Land_HBarrierBig_F",
-	"Land_HBarrierWall6_F",
-	"Land_HBarrierWall_corner_F",
-	"Land_HBarrierTower_F",
-	"Land_CncWall4_F",
-	"Land_CncShelter_F"
 ];
 FCLIB_sar_wreck = "Land_Wreck_Heli_Attack_01_F";
 FCLIB_sar_fire = "test_EmptyObjectForFireBig";
