@@ -14,11 +14,12 @@ _unit addVest "V_BandollierB_rgr";
 _unit addItemToVest "FirstAidKit";
 for "_i" from 1 to 2 do {_unit addItemToVest "MiniGrenade";};
 for "_i" from 1 to 2 do {_unit addItemToVest "16Rnd_9x21_Mag";};
-for "_i" from 1 to 6 do {_unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Green";};
+for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_F";};
+for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Tracer_Green_F";};
 _unit addHeadgear "H_Bandanna_camo";
 _unit addGoggles "G_Bandanna_beast";
 
-_unit addWeapon "arifle_Mk20C_F";
+_unit addWeapon "arifle_AKM_F";
 _unit addWeapon "hgun_P07_F";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
